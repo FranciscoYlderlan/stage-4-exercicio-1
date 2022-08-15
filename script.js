@@ -27,29 +27,26 @@ results.push({"description": even? "par" : "ímpar", "value": even });
 // console.log(results);
 
 function outputResult(description, value) {
+    
     if (description === "iguais" || description === "diferentes" ) {
         return `Os números são ${description}.`;
     }
     if (description === "par" || description === "ímpar" ) {
         return `A soma é ${description}.`;
     }
-    return `O resultado do(a) ${description} foi: ${value}.`;
+    
+    let valueFormatted = String((value).toFixed(2)).replace('.',','); 
+
+    return `O resultado do(a) ${description} foi: ${valueFormatted}.`;
 }
 
-function valueFormatted (description,value) {
-    if (description === "iguais" || description === "diferentes" ||
-        description === "par" || description === "ímpar" ){
-        return value;
-    }
-    return  String((value).toFixed(2)).replace('.',',');
-}
+
 console.log(`O primeiro número informado foi: ${numberOne}
 O segundo número informado foi: ${numberTwo}
 
 `);
 
 results.forEach(result => {
-    result.value = valueFormatted(result.description,result.value);
     // console.log(outputResult(result.description,result.value));
     alert(outputResult(result.description,result.value));    
 });
