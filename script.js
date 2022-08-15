@@ -9,7 +9,7 @@ const results = [];
 
 const sum = numberOne+numberTwo;
 const subtraction = numberOne-numberTwo;
-const multiplcation = numberOne*numberTwo;
+const multiplication = numberOne*numberTwo;
 const division = numberOne/numberTwo;
 const rest = numberOne%numberTwo;
 
@@ -18,7 +18,7 @@ const even = (numberOne+numberTwo)%2 === 0;
 
 results.push({"description": "adição", "value": sum });
 results.push({"description": "subtração", "value": subtraction });
-results.push({"description": "multiplicação", "value": multiplcation });
+results.push({"description": "multiplicação", "value": multiplication });
 results.push({"description": "divisão", "value": division });
 results.push({"description": "resto", "value": rest });
 results.push({"description": equals? "iguais" : "diferentes", "value": equals });
