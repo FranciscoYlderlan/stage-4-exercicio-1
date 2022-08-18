@@ -27,11 +27,13 @@ results.push({"description": even? "par" : "ímpar", "value": even });
 // console.log(results);
 
 function outputResultMessage(description, value) {
+    const compared = description === "iguais" || description === "diferentes" ; 
+    const parity = description === "par" || description === "ímpar";
     
-    if (description === "iguais" || description === "diferentes" ) {
+    if (compared) {
         return `Os números são ${description}.`;
     }
-    if (description === "par" || description === "ímpar" ) {
+    if (parity) {
         return `A soma é ${description}.`;
     }
     
