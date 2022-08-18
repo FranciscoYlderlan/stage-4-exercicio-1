@@ -26,7 +26,7 @@ results.push({"description": even? "par" : "ímpar", "value": even });
 
 // console.log(results);
 
-function outputResult(description, value) {
+function outputResultMessage(description, value) {
     
     if (description === "iguais" || description === "diferentes" ) {
         return `Os números são ${description}.`;
@@ -48,5 +48,5 @@ O segundo número informado foi: ${numberTwo}
 
 results.forEach(result => {
     // console.log(outputResult(result.description,result.value));
-    alert(outputResult(result.description,result.value));    
+    alert(outputResultMessage(result.description,result.value));    
 });
